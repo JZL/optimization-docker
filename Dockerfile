@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/minimal-notebook:python-3.11.7
+FROM quay.io/jupyter/minimal-notebook:python-3.13
 
 LABEL maintainer="Bartolomeo Stellato <bartolomeo.stellato@gmail.com>"
 

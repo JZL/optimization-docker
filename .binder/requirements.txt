@@ -1,0 +1,12 @@
+jax
+cvxpy
+pepit
+dccp
+investpy
+matplotlib
+networkx
+numpy
+pyarrow
+pandas
+scipy
+ipywidgets
