@@ -1,5 +1,0 @@
-cm-super
-dvipng
-build-essential
-cmake
-libopenblas-dev
