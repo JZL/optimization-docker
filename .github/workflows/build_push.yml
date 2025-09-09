@@ -6,7 +6,7 @@ on:
       - "main"
 
 env:
-  REGISTRY_IMAGE: bstellato/optimization-docker
+  REGISTRY_IMAGE: jzl003/optimization-docker
 
 jobs:
   build:
