@@ -16,7 +16,8 @@ jobs:
       matrix:
         platform:
           - linux/amd64
-          - linux/arm64
+          # arm is slow and then have to wait for the merge for it to be pushed anyway
+          # - linux/arm64
     steps:
       -
         name: Prepare
