@@ -22,6 +22,8 @@ COPY --chown=${NB_UID}:${NB_GID} Project.toml  /home/${NB_USER}
 
 RUN bash -c ". ~/.profile; julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'"
 
+RUN sed -i "s,@[.],/home/jovyan," /home/jovyan/.local/share/jupyter/kernels/julia-*/kernel.json
+
 COPY --chown=${NB_UID}:${NB_GID} 01_Test_Julia.ipynb  /home/${NB_USER}
 
 CMD ["start-notebook.py", "--IdentityProvider.token=''"]

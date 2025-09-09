@@ -16,7 +16,7 @@ jobs:
       matrix:
         platform:
           - linux/amd64
-          # arm is slow and then have to wait for the merge for it to be pushed anyway
+          # arm is slow (1 HOUR PLUS) and then have to wait for the merge for it to be pushed anyway
           # - linux/arm64
     steps:
       -
